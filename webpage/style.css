@@ -1,0 +1,595 @@
+
+html {
+    position: relative;
+    scroll-behavior: smooth!important;
+}
+
+body {
+    font-family: 'Cabin', 'Plato Medium', Arial, Helvetica, san-serif;
+}
+
+html,body {
+    min-height:100%;
+}
+
+.navbar {
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255,255,255,.5)!important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.banner {
+    font-family: 'Cabin', 'Plato Medium', Arial, Helvetica, san-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url("images/slider1.jpg");
+    animation: banner 11s infinite linear;
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0,0,0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.banner-content p {
+    font-size: 18px;
+}
+
+.banner-content button {
+    text-decoration: none;
+    color: #FFF;
+    padding: 9px 20px;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+
+}
+
+.banner-content button:hover {
+    background-color: #FFF;
+    color: #333;
+}
+
+.logo {
+    font-family: 'Plato Medium', Arial, Helvetica, san-serif;
+    font-size: 32px;
+}
+
+.container-fluid {
+    top: 100vh;
+}
+
+.no-padding {
+    width: 300px!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+    flex: none;
+}
+
+.only-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.img-cabana {
+    position: relative;
+}
+
+.cabana {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    text-transform: uppercase;
+}
+
+.cabanas {
+    font-family: 'Plato Medium', Arial, Helvetica, san-serif;
+}
+
+.divinfo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 80%;
+    text-transform: uppercase;
+}
+
+.btninfo {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color:rgba(184, 180, 180, 0.4);
+    border: none;
+}
+
+.btninfo:hover {
+    background-color:rgba(129, 129, 129, 0.6);
+}
+
+.nuestras-cabanas{
+    font-family: 'Cabin', 'Plato Medium', Arial, Helvetica, san-serif;
+    padding: 1rem!important;
+}
+
+.descripcion {
+    letter-spacing: 2px;
+}
+
+@keyframes banner{
+    0% {
+        background-image: url("images/slider1.jpg");
+    }
+    25% {
+        background-image: url("images/slider1.jpg");
+    }
+    50% {
+        background-image: url("images/slider2.jpg");
+    }
+    75% {
+        background-image: url("images/slider2.jpg");
+    }
+    100% {
+        background-image: url("images/slider1.jpg");
+    }
+}
+
+@font-face {
+    font-family: 'Plato Medium';
+    src: url('fonts/Plato\ Medium.ttf');
+}
+
+@media only screen and (max-width: 540px) {
+
+    .banner-content h1 {
+        font-size: 29px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .no-padding-ambiente {
+        width: 300px!important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+        flex: none;
+    }
+
+    figure {
+        width: auto!important;
+        height: auto!important;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+    }
+ 
+ }
+
+ .contacto {
+     background-color: #E9E4DE;
+ }
+
+ /*FOOTER*/
+ footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.fila{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.fila2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.fila2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.fila2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+.fila2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.fila2 a, label {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1590px) {
+    .no-padding {
+        width: 250px!important;
+    }
+}
+
+
+/*---------------------------------------------*/
+
+.shop-button {
+    margin-top: 6px;
+    font-size: 15px;
+    height: 47px;
+    background-color: #202020!important;
+    color: white!important;
+    border-radius: 0px;
+    text-transform: uppercase;
+  }
+
+  .shop-button:hover {
+    height: 47px;
+    background-color: white!important;
+    color: black!important;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: 1px solid black;
+  
+  }
+
+  .title {
+      color:  rgb(170, 170, 170);
+  }
+  
+  .subtitle {
+      text-align: center;
+      padding: 6px;
+  }
+
+/*AGREGAR A PRODUCTIVO*/
+
+.nav-item {
+    cursor: pointer;
+}
+
+.areas-comunes {
+    background-color:#E9E4DE;
+}
+
+.img-comunes {
+    width: 30%;
+}
+
+.container-fluid {
+    padding: 0!important;
+}
+ 
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+/*GALLERY*/
+figure {
+	width: 400px;
+	height: 266px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.ambientes {
+    background-color: white;
+}
+
+.ambiente {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.wiggle {
+    margin:0 auto;
+  }
+  
+  .wiggle:hover {
+    -webkit-animation:none;
+  }
+  
+  .short-animate {
+    -webkit-transition:.5s ease-in-out;
+    -moz-transition:.5s ease-in-out;
+    -ms-transition:.5s ease-in-out;
+    -o-transition:.5s ease-in-out;
+    transition:.5s ease-in-out;
+  }
+  
+  .long-animate {
+    width: 60%;
+    -webkit-transition: .5s .5s ease-in-out;
+    -moz-transition: .5s .5s ease-in-out;
+    -ms-transition: .5s .5s ease-in-out;
+    -o-transition:.5s .5s ease-in-out;
+    transition:.5s .5s ease-in-out;
+  }
+  
+  html,body {
+    height:100%;
+    min-height:100%;
+  }
+  
+  .lightbox {
+    position:fixed;
+    top:-100%;
+    bottom:100%;
+    left:0;
+    right:0;
+    background: rgba(0,0,0, .9);
+    z-index:9999;
+    opacity:0;
+  }
+  
+  .lightbox img {
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    max-width:0%;
+    max-height:0%;
+  }
+  
+  #lightbox-controls {
+    position:fixed;
+    height:70px;
+    width:70px;
+    top:-70px;
+    right:0;
+    z-index:9999;
+    background:rgba(0,0,0,.1);
+  }
+  
+  #close-lightbox {
+    display:block;
+    position:absolute;
+    overflow:hidden;
+    height:50px;
+    width:50px;
+    text-indent:-5000px;
+    right:10px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+  }
+  
+  #close-lightbox:before {
+    content:'';
+    display:block;
+    position:absolute;
+    height:0px;
+    width:3px;
+    left:24px;
+    top:0;
+    background:white;
+    border-radius:2px;
+    -webkit-transition: .5s .5s ease-in-out;
+    -moz-transition: .5s .5s ease-in-out;
+    -ms-transition: .5s .5s ease-in-out;
+    -o-transition:.5s .5s ease-in-out;
+    transition:.5s .5s ease-in-out;
+  }
+  
+  #close-lightbox:after {
+    content:'';
+    display:block;
+    position:absolute;
+    width:0px;
+    height:3px;
+    top:24px;
+    left:0;
+    background:white;
+    border-radius:2px;
+    -webkit-transition: .5s 1s ease-in-out;
+    -moz-transition: .5s 1s ease-in-out;
+    -ms-transition: .5s 1s ease-in-out;
+    -o-transition:.5s 1s ease-in-out;
+    transition:.5s 1s ease-in-out;
+  }
+  
+  .lightbox:target {
+    top:0%;
+    bottom:0%;
+    opacity:1;
+  }
+  
+  .lightbox:target img {
+    max-width:100%;
+    max-height:100%;
+  }
+  
+  .lightbox:target ~ #lightbox-controls {
+    top:0px;
+  }
+  
+  .lightbox:target ~ #lightbox-controls #close-lightbox:after {
+    width:50px;
+  }
+  
+  .lightbox:target ~ #lightbox-controls #close-lightbox:before {
+    height:50px;
+  }
+  
+  @-webkit-keyframes wiggle {
+      0% {
+        -webkit-transform:rotate(2deg);
+    }
+    20% {-webkit-transform:rotate(-2deg);}
+    40% {-webkit-transform:rotate(2deg);}
+    60% {-webkit-transform:rotate(-2deg);}
+    80% {-webkit-transform:rotate(2deg);}
+      100% {-webkit-transform:rotate(-2deg);}
+  }
+
+  .no-padding-ambiente {
+    width: 400px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+    flex: none;
+}
+
+.nombre-cabana {
+    font-size: 35px!important;
+}
+
+iframe {
+    width: 100%;
+}
+
